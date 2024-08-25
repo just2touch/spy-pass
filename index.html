@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity Web Player | spy-pass</title>
+    <title>Unity Web Player | SpyPass</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
@@ -20,7 +20,7 @@
       <div id="unity-footer">
         <div id="unity-logo-title-footer"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">spy-pass</div>
+        <div id="unity-build-title">SpyPass</div>
       </div>
     </div>
     <script>
@@ -52,15 +52,15 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/build_spypass_rb.loader.js";
+      var loaderUrl = buildUrl + "/webgl-gzip.loader.js";
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/build_spypass_rb.data.unityweb",
-        frameworkUrl: buildUrl + "/build_spypass_rb.framework.js.unityweb",
-        codeUrl: buildUrl + "/build_spypass_rb.wasm.unityweb",
+        dataUrl: buildUrl + "/webgl-gzip.data.unityweb",
+        frameworkUrl: buildUrl + "/webgl-gzip.framework.js.unityweb",
+        codeUrl: buildUrl + "/webgl-gzip.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "DefaultCompany",
-        productName: "spy-pass",
+        companyName: "Mobilord",
+        productName: "SpyPass",
         productVersion: "1.0",
         showBanner: unityShowBanner,
       };
@@ -89,8 +89,8 @@
 
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
-        canvas.style.width = "100%";
-        canvas.style.height = "100%";
+        canvas.style.width = "1080px";
+        canvas.style.height = "1920px";
       }
 
       document.querySelector("#unity-loading-bar").style.display = "block";
